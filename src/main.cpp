@@ -102,7 +102,7 @@ void setup() {
 void loop() {
   WiFiClientSecure *client = new WiFiClientSecure;
   if(client) {
-    client -> setCACert(rootCACertificate);
+    // client -> setCACert(rootCACertificate);
 
     {
       // Add a scoping block for HTTPClient https to make sure it is destroyed before WiFiClientSecure *client is 
